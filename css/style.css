@@ -6,10 +6,14 @@
 /* *** ESTILOS GENERALES *** */
 /* *********************************** */
 
+html {
+    font-size: 16px;
+}
+
 /* Tipografía */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+    font-family: "";
+    src: url("") format("woff2"), url("") format("woff");
 }
 
 /* ******************************** */
@@ -17,3 +21,59 @@
 /* Colores */
 
 /* ******************************** */
+
+
+/* HEADER */
+header {
+    height: 80px;
+    background: #d9d9d9;
+    /* flex */
+    display: flex;
+    justify-content: center;
+
+    /* section centrar */
+    .centrar {
+      /* width para flex */
+        flex-basis: 1366px;
+        padding: 0 10px;
+        /* flex */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        /* logo */
+        .header__logotipo {
+            width: 55px;
+            height: 55px;
+            background: #787878;
+        }
+    }
+}
+
+/* MAIN */
+main {
+  width: 1366px;
+  margin: 0 auto;
+  /* GRID */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: [banner]500px;
+  grid-auto-rows: 389px;
+  gap: 50px;
+
+  /* Banner */
+  .main__banner{
+    grid-column: 1/3;
+    background: #AAA;
+  }
+
+    /* imagen */
+    .main__imagenservicio{
+      background: #AAA;
+    }
+
+    .main__textoservicio{
+      align-self: center;
+    }
+  
+}
