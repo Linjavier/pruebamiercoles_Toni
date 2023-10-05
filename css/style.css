@@ -33,8 +33,11 @@ header {
 
     /* section centrar */
     .centrar {
+
       /* width para flex */
+      /* Width / max-width,mejor para móvil porque se gira adaptando automaticamente*/
         flex-basis: 1366px;
+        
         padding: 0 10px;
         /* flex */
         display: flex;
